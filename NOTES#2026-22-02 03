@@ -1,0 +1,328 @@
+
+conda env create -f h8_env.yml
+
+POSTGRES_DB=h8_database
+POSTGRES_USER=h8_user
+POSTGRES_PASSWORD=GantiDenganPasswordKuat
+
+PGADMIN_DEFAULT_EMAIL=admin@h8.local
+PGADMIN_DEFAULT_PASSWORD=GantiPasswordPgAdmin
+
+
+=================
+
+POSTGRES_DB=h8_database
+POSTGRES_USER=h8_user
+POSTGRES_PASSWORD=1234
+
+PGADMIN_DEFAULT_EMAIL=admin@gmail.com
+PGADMIN_DEFAULT_PASSWORD=1234
+
+
+
+
+
+
+?contoh many to many ????
+????
+fitur post collaboratif pada IG m2m
+hapus data dalam relasi db bisa error#ini diperhatikan merancang db
+
+masalah data duplicate pada db pada jangka panjang
+#solusinya yaitu Normalization
+#prinsipnya melakukan breakdown ,dari 1 table dipecah ke table-table kecil dan membuat relationship
+
+#normalisasi pekerjaan team #bisa beda beda sudut pandang
+#melakukan sampai 3NF
+1NF setiap cell harus ada single value
+    dalamnya satu column nya harus ada yang unik, bisa 2 colunn jadi PK,
+    Movie name dan Ganre
+
+2nF harus lulus 1NF
+    functional depedency
+
+meminimalisir duplikasi , walaupun masih ada duplikasi ,tidak masalah NORMALISASI
+
+CSV ubah ke table - ambil 5 10 baris untuk normalisasi
+dalam normalisasi tidak ada tool khusus, cuma dengan coret coretan saja
+
+
+
+entity relational  ERD
+
+data unstructure, semi structure, structure
+
+SQL
+
+meng query = mencari informasi
+
+Phase 0 - Week 2 - Day 3 AM - Relational Database and Queries: DDL & DML
+https://colab.research.google.com/github/FTDS-learning-materials/phase-0/blob/v2.4/w2/P0W2D3AM%20-%20Relational%20Database%20and%20Queries%20-%20DDL%20%26%20DML.ipynb
+
+Phase 0 - Week 2 - Day 3 AM - Relational Database and Queries: DDL & DML
+    P0W2D3AM - Relational Database and Queries - DDL & DML.ipynb
+https://colab.research.google.com/github/FTDS-learning-materials/phase-0/blob/v2.4/w2/P0W2D3AM%20-%20Relational%20Database%20and%20Queries%20-%20DDL%20%26%20DML.ipynb#scrollTo=4GoweajavKje
+
+
+
+Phase 0 - Week 2 - Day 3 PM - Relational Database and Queries: Basic DQL
+https://colab.research.google.com/github/FTDS-learning-materials/phase-0/blob/v2.4/w2/P0W2D3PM%20-%20Relational%20Database%20and%20Queries%20-%20Basic%20DQL.ipynb
+
+Phase 0 - Week 2 - Day 3 PM - Relational Database and Queries: Google BigQuery
+https://colab.research.google.com/github/FTDS-learning-materials/phase-0/blob/v2.4/w2/P0W2D3PM%20-%20Relational%20Database%20and%20Queries%20-%20Google%20BigQuery.ipynb
+
+
+Python Tutorial
+https://www.w3schools.com/python/default.asp
+
+SQL Tutorial
+https://www.w3schools.com/sql/
+
+
+https://www.postgresql.org/docs/current/datatype.html
+
+port : 5432
+database
+table
+schema
+
+?persamaan nama google cloud vs sql
+dataset = schema
+
+
+SQL Execution Logic ????????
+
+livecode w2
+!!!!!!!!!!!!
+D. Query on Google Colab
+    ID di GCP
+    =====================
+    D. Query on Google Colab
+    di https://colab.research.google.com/github/FTDS-learning-materials/phase-0/blob/v2.4/w2/P0W2D3PM%20-%20Relational%20Database%20and%20Queries%20-%20Google%20BigQuery.ipynb#scrollTo=qEklQ33s1w1k
+
+    GCP
+    https://console.cloud.google.com/bigquery?p=bigquery-public-data&d=austin_crime&page=dataset&project=my-project-1234-274907&ws=!1m15!1m4!3m2!1sbigquery-public-data!2saustin_crime!23sLEGACY_URL_PARAM!1m4!1m3!1smy-project-1234-274907!2sjob_adDcJdZ8jBjPF2gU4_mkVTrJhp1C!3sUS!1m4!3m2!1sbigquery-public-data!2saustin_bikeshare!23sTREE_NODE_SELECTION
+
+    # Connecting Google Colab with Google Cloud
+
+from google.colab import auth
+from google.cloud import bigquery
+auth.authenticate_user()
+print('Authenticated')
+
+#################black-stream-274907 dari GCP - project - ID
+GCP_PROJECT_ID = 'black-stream-274907' # Use your GCP Project ID
+client = bigquery.Client(project = GCP_PROJECT_ID)
+
+    D. Query on Google Colab
+You can run SQL queries on data from Google BigQuery using Google Colab. This means you can combine SQL syntax with Python syntax within Google Colab. You'll need the ID of the Google Cloud Platform project you created earlier.
+
+Remember you need GCP Project ID not GCP Project Name
+
+Here are the steps to find your GCP Project ID:
+
+Click on the GCP Project Name you created earlier.
+
+You can find your GCP Project Name at the top of the Google Cloud page. For example, the image below uses the GCP Project Name Personal-Danu.
+
+
+A pop-up window will appear showing your GCP Project Name and GCP Project ID. The GCP Project ID is usually in lowercase.
+
+
+Summary from the image above :
+
+=======================================
+
+ini untuk LIVECODE dan unGRADECHALLANGE juga GC sudah bisa dikerjakan 
+2026-11-04
+
+
+####latihan Normalisasi pake ai
+
+data warehouse juga akan dibahas di phase 2
+
+install postgre sql dan pgadmin
+###############################
+akan muncul StackBuilder jangan di ceklist
+
+besok akan bahas SQL
+
+
+https://github.com/basobox/phiTON
+
+Recording List Phase 0 FTDS-047-HCK
+https://docs.google.com/spreadsheets/d/1uKhOt8oq1aLFvbRbprqbEo-DW-j9mrV4FAo-8YfqZg8/edit?gid=1495317977#gid=1495317977
+
+Schedule & Recording List Phase 0 FTDS-047-HCK
+Full Time Data Science Schedule - Phase 0										
+https://docs.google.com/spreadsheets/d/1uKhOt8oq1aLFvbRbprqbEo-DW-j9mrV4FAo-8YfqZg8/edit?gid=1020712623#gid=1020712623
+
+
+
+==================================
+--------------DEADLINE------------
+==================================
+
+SELASA 2026-11-03
+=================
+Hi @basobox, please be reminded that the deadline for this assignment is 2026-10-03 23:59 WIB.
+P0-GC1-Set-2-FTDS-047-HCK-basobox
+https://github.com/FTDS-Assignment-Bay-2/P0-GC1-Set-2-FTDS-047-HCK-basobox
+
+ https://github.com/FTDS-Assignment-Bay-2/P0-GC1-Set-2-FTDS-047-HCK-basobox/pull/2
+ https://github.com/FTDS-Assignment-Bay-2/P0-GC1-Set-2-FTDS-047-HCK-basobox/issues/1
+
+
+Python - Build a basic To-Do List Project: Solutions and Explanations
+https://www.w3resource.com/projects/python/python-to-do-list-application-project.php
+
+RABU 2026-11-04
+===============
+
+Student Card - Nawafi Suren
+https://docs.google.com/spreadsheets/d/1Gb1BHzY9Sqd8dlOBPxMbxtgEjC6VHkijdVqicz0TDnM/edit
+
+https://www.kode.id/courses/take/engineering-empathy/lessons/43391005-effective-stress-management
+
+Tuntutan 
+
+Eustress
+- Menghadapi GradeChallage /43391005-effective-stress-management
+
+
+Effective Stess Management
+	Perceived Stress Scale
+
+A. Tidak Pernah		B. Hampir Tidak Pernah 		C. Kadang-Kadang 		D. Agak Sering 		E. Sangat Sering
+
+
+1. Seberapa sering Anda merasa kesal karena terjadi sesuatu yang tidak Anda harapkan? 
+	Kadang-Kadang
+	
+2. Seberapa sering Anda merasa bahwa Anda tidak dapat mengontrol hal-hal penting dalam hidup Anda?
+	Kadang-Kadang
+	
+3. Seberapa sering Anda merasa grogi dan tertekan?
+	Kadang-Kadang
+
+4. Seberapa sering Anda merasa yakin dengan kemampuan Anda untuk menghadapi masalah personal Anda?
+	Agak Sering
+
+5. Seberapa sering Anda merasa hal-hal terjadi sesuai rencana Anda?
+	Kadang-Kadang
+
+6. Seberapa sering Anda merasa bahwa Anda tidak dapat mengatasi hal-hal yang harus Anda lakukan?
+  	Kadang-Kadang
+
+7. Seberapa sering Anda dapat mengatasi gangguan yang terjadi dalam hidup Anda?
+	Agak Sering
+
+8. Seberapa sering Anda merasa bahwa Anda dapat mengontrol segala hal dengan sangat baik?
+	Agak Sering
+	
+9. Seberapa sering Anda merasa beraada dalam kesulitan yang berat sehingga Anda tidak dapat mengatasinya?
+	Hampir Tidak Pernah
+
+
+Apa poin pembelajaran yang paling berkesan dan mengena dari materi video?
+===============
+Mengetahui bahwa strees tidak hanya negatif (disstress) tapi juga bisa positif (eustress), tergantung bagaimana kita menyikapi stress.
+
+
+Apa yang membuat kamu stress akhir-akhir ini?
+(tuliskan secara rinci dan buatlah daftarnya)
+======================================
+- Biaya belum cukup awalnya tapi tetap ada jalan keluarnya dan Alhamdulillah akhirnya lunas.
+- Laptop yang mulai error yang makin lama makin parah, sampai ngga bisa dipake lagi karena konslet, Alhamdulillah masih ada laptop cadangan, walaupun tak sebaik yang pertama.
+- Adaptasi dengan metode pembelajarannya, kalo di D3 dulu lebih mirip seperti SMA/SMK, di bootcamp,mungkin seperti S1(karena belum pernah S1),bedanya dengan S1 4tahun,bootcamp cuma 3bulan(S1 yang dipadatkan dalam 3bulan).
+- Materi yang sangat banyak dan dipadatkan per satu pekan dengan LIVECODE, GRADECHALLANGE sebagai penilaian selama sepekan. Ini menjadi motivasi dengan merubah cara belajar,latihan yang masih santai. 3 bulain Bootcamp = / vS 3 Tahun D3/S1. Adrenaline jadi terpacu karena diharapkan selama 3 bulan minimal selevel atau bahkan lebih dari lulusan D3/S1
+
+
+Apa yang kamu pikirkan dan rasakan mengenai hal-hal yang membuat kamu stress?
+(refleksikan dan elaborasi sejujur-jujurnya)
+==================================
+biasanya kalo stress, tidak terlalu ngefek, walaupun ada yang berlarut-larut, solusi yang sudah dipake 
+yaitu dengan dzikir(ini strength saya,yang pendiam,kesulitan komunikasi, kata Navid "introvert), lebih mudah mengerjakan
+"meditation" kalo pake bahasa nya EE.
+Tapi di Bootcamp case nya mulai beda, yang sebelumnya kalo belajar di sekolah, kuliah, kursus, dll. 
+Biasanya lebih santai walaupun output atau outcome nya ala kadar,di Bootcamp materi dan metode belajar nya
+terasa tinggi pressure dan dari pribadi pun juga tinggi (karena sudah habis biaya yang cukup banyak, beda lagi ceritanya kalo harga bootcamp satu digit atau bahakan dibawah satu digit, seperti tempat belajar sebelumnya. week1 metode yang dipake masih adaptasi,karena memang baru menghadapi yang seperti ini. Namun hasil belajar week1 kurang memuaskan, ini puncaknya stress.
+
+
+Bagaimana usaha atau rencana kamu dalam mengatasi dan mengelola stress tersebut?
+==============================
+Maka solusinya yang pertama tetap konsisten dzikirnya, baca Al-qur'an nya, ibadah lainnya.
+Lalu merubah metode belajar, strategi belajar, latihan agar lebih baik lagi dan tidak menyerah seperti password wifi nya students (dontgiveup). Ini telah dirasakan manfaatnya hingga hari selasa malam 23:59 WIB(setelah menyelesaikan tugas GC). week ke2 ini akan diperbaiki.
+
+
+
+
+
+Usaha yang dilakuka
+
+
+
+
+
+
+
+
+
+Tuntutan 
+
+Eustress 
+========
+- Mengerjakan Journaling EE - walaupun menambah beban tugas yang banyak di selama bootcamp, tapi Journaling EE ini sangat bermanfaat untuk solusi menghadapi kesulitan-kesulitan selama bootcamp bahkan setelah bekerja nanti.
+- Menghadapi LiveCode - membuat saya lebih giat lagi belajar yaitu dengan membaca dan latihan koding.
+- Menghadapi LiveCode - membuat saya lebih giat lagi belajar yaitu dengan membaca dan latihan koding.
+- Tanggung jawab biaya untuk keluarga
+
+Distress
+========
+- Hasil GC dan LC yang kurang memuaskan
+-
+
+-------------------------------------------------------------------------------------
+
+
+===================================
+---------------PASS----------------
+===================================
+
+
+------------------------------------------------------------------------------------------------
+
+SENIN 2026-11-02 #pagi
+====================== 
+LC
+Live Code 1FTDS Phase 0 - Week 2 - Day 1 AM
+
+P0-LC1-Set-2-FTDS-047-HCK-basobox
+Private
+=======
+Hi @basobox, please be reminded that the deadline for this assignment is 2026-10-02 12:15 WIB.
+FTDS-Assignment-Bay-2/P0-LC1-Set-2-FTDS-047-HCK-basobox
+https://github.com/FTDS-Assignment-Bay-2/P0-LC1-Set-2-FTDS-047-HCK-basobox
+
+https://github.com/FTDS-Assignment-Bay-2/P0-LC1-Set-2-FTDS-047-HCK-basobox/issues/1
+https://github.com/FTDS-Assignment-Bay-2/P0-LC1-Set-2-FTDS-047-HCK-basobox/pull/2
+
+
+------------------------------------------------------------------------------------------------
+
+
+SENIN 2026-11-02 #siang
+=======================
+Kelas materi :
+Day 1 PM - Pandas for Data Analysis 
+
+Pandas for Data AnalysisFTDS Phase 0 - Week 2 Day 1 PM
+https://www.kode.id/courses/take/full-time-data-analytics-phase-0/pdfs/46908449-day-1-am-live-code-1
+
+------------------------------------------------------------------------------------------------
+
+
+
+
+
+
