@@ -1,3 +1,5 @@
+https://share.google/aimode/Vac1PjtexwMLBLuTi
+
 # Ringkasan Kendala, Solusi, dan Analisis Data (Pandas & PostgreSQL)
 
 Dokumen ini merangkum seluruh kendala (*error*), langkah *troubleshooting*, optimasi performa, pembersihan data kosong, hingga contoh analisis data menggunakan Pandas yang telah didiskusikan.
